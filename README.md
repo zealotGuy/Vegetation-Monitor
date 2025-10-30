@@ -1,4 +1,4 @@
-# 🔥 FireGuard AI - Power Line Vegetation Fire Risk Monitoring System
+# FireGuard AI - Power Line Vegetation Fire Risk Monitoring System
 
 An AI-powered early warning system that predicts and prevents wildfires caused by vegetation contact with power transmission lines. Uses machine learning to analyze vegetation growth patterns and provides real-time alerts to fire authorities.
 
@@ -6,13 +6,13 @@ An AI-powered early warning system that predicts and prevents wildfires caused b
 ![Flask](https://img.shields.io/badge/flask-3.0.0-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## 🌐 Live Demo
+## Live Demo
 
 **Try it now:** [https://lineguard.pythonanywhere.com/](https://lineguard.pythonanywhere.com/)
 
 Experience the live monitoring system with real-time vegetation tracking, ML risk predictions, and interactive California power line maps.
 
-## 🚨 The Problem We Solve
+## The Problem We Solve
 
 **The Critical Chain Reaction:**
 1. Vegetation grows near power lines
@@ -23,41 +23,41 @@ Experience the live monitoring system with real-time vegetation tracking, ML ris
 
 **Our Solution:** Predict when vegetation will become dangerous and alert authorities **before** contact occurs.
 
-## ✨ Key Features
+## Key Features
 
-### 🤖 AI-Powered Predictions
+### AI-Powered Predictions
 - **Machine Learning Risk Assessment**: Dual-model system (Random Forest + Gradient Boosting)
 - **27 Engineered Features**: Analyzes vegetation height, clearance, NDVI, weather, and infrastructure
 - **97%+ Accuracy**: Highly reliable classification and risk scoring
 - **Weekly Growth Forecasts**: Predicts vegetation growth 10+ weeks ahead
 
-### 🗺️ Interactive Monitoring Dashboard
+### Interactive Monitoring Dashboard
 - **Real-time Map Visualization**: Leaflet.js-powered interactive map of California power lines
 - **Color-Coded Risk Zones**:
-  - 🔴 **Red (Critical)**: Immediate fire risk - clearance ≤ 6.0m
-  - 🟡 **Yellow (Moderate)**: Growing concern - clearance 6.0-7.5m
-  - 🟢 **Green (Safe)**: No immediate risk - clearance > 7.5m
+  -  **Red (Critical)**: Immediate fire risk - clearance ≤ 6.0m
+  -  **Yellow (Moderate)**: Growing concern - clearance 6.0-7.5m
+  -  **Green (Safe)**: No immediate risk - clearance > 7.5m
 - **Zone Details**: Hover tooltips show vegetation height, clearance, risk level, and ML predictions
 - **Timeline Slider**: Visualize vegetation growth week-by-week
 
-### 📊 Live Metrics Dashboard
+### Live Metrics Dashboard
 - Active alert count
 - Monitored zones count
 - Average vegetation height
 - ML risk assessment (level, score, confidence)
 
-### 🚨 Authority Notification System
+### Authority Notification System
 - One-click alert to fire departments
 - Automated priority assignment (LOW/MEDIUM/HIGH)
 - Multi-zone batch notifications
 - Detailed zone coordinates and risk data
 
-### 📡 Synthetic Data System
+### Synthetic Data System
 - **LIDAR Canopy Height Data**: Simulated aerial vegetation measurements
 - **Vegetation Spread Patterns**: Growth distribution across zones
 - **Growth Simulation**: Realistic weekly vegetation progression with seasonal variations
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Backend
 - **Framework**: Flask 3.0.0 (Python web framework)
@@ -112,7 +112,7 @@ Fire App/
 └── presentation.html              # Demo presentation
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - **Python 3.8+** (3.10 recommended)
@@ -147,12 +147,12 @@ pip install -r requirements.txt
 #### 4. Verify Data and Models
 
 The repository includes:
-- ✅ **Synthetic datasets** (`data/` folder):
+- **Synthetic datasets** (`data/` folder):
   - `lidar_canopy_data.json` - LIDAR measurements
   - `vegetation_spread_data.json` - Spatial patterns
   - `growth_simulation_data.json` - Weekly growth
   
-- ✅ **Trained ML models** (`models/` folder):
+- **Trained ML models** (`models/` folder):
   - `fire_app_risk_model_classifier_*.pkl`
   - `fire_app_risk_model_regressor_*.pkl`
   - `fire_app_risk_model_scaler_*.pkl`
@@ -174,9 +174,9 @@ python3 app.py
 
 You should see:
 ```
-✅ Models loaded from timestamp: YYYYMMDD_HHMMSS
-✅ ML Risk Model loaded successfully
-✅ Loaded synthetic LIDAR and growth simulation data
+ Models loaded from timestamp: YYYYMMDD_HHMMSS
+ ML Risk Model loaded successfully
+ Loaded synthetic LIDAR and growth simulation data
  * Running on http://127.0.0.1:5000
 ```
 
@@ -186,9 +186,9 @@ Navigate to:
 http://127.0.0.1:5000
 ```
 
-**🎉 The app is now running!**
+** The app is now running!**
 
-## 🎮 Usage
+## Usage
 
 ### What You'll See
 
@@ -205,15 +205,15 @@ The system monitors **10 vegetation zones** across California:
 2. Use **Week buttons** (Week 0-7) to see vegetation growth over time
 3. Watch zones change from green → yellow → red as vegetation grows
 4. Observe the **Live Metrics Panel** (right side):
-   - 🔴 Active Alerts count
-   - 🟡 Monitored Zones count
-   - 🌱 Average Vegetation height
-   - 🤖 ML Risk Assessment (level, score, confidence)
+   - Active Alerts count
+   - Monitored Zones count
+   - Average Vegetation height
+   - ML Risk Assessment (level, score, confidence)
 
 ### View Zone Details
 **Two ways to see zones:**
 
-1. **Red Marker Pins** (📍): High-risk alert zones
+1. **Red Marker Pins**: High-risk alert zones
    - **Hover** to see popup with details
    - **Click** for full information panel
    
@@ -247,7 +247,7 @@ The system monitors **10 vegetation zones** across California:
 - **Pan**: Click and drag the map
 - **Week Navigation**: Use slider or week buttons to see time progression
 
-## 🧠 How the AI Works
+## How the AI Works
 
 ### The Prediction Process
 
@@ -282,7 +282,7 @@ The system monitors **10 vegetation zones** across California:
 - **Explainable**: Feature importance shows what drives risk
 - **Validated**: Tested on diverse vegetation types and conditions
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 ### Classification Model (Risk Level)
 - **Accuracy**: 97.35%
@@ -301,7 +301,7 @@ The system monitors **10 vegetation zones** across California:
 - **Prediction Horizon**: 10+ weeks
 - **False Positive Rate**: < 3%
 
-## 🌐 Deployment to PythonAnywhere
+## Deployment to PythonAnywhere
 
 ### Step 1: Prepare Files
 ```bash
@@ -383,7 +383,7 @@ Returns vegetation spread patterns over time.
 ### GET `/api/growth_simulation`
 Returns complete growth simulation data.
 
-## 🔧 Configuration
+## Configuration
 
 ### Adjust Prediction Interval
 In `app.py`, modify:
@@ -401,7 +401,7 @@ CLEARANCE_THRESHOLD = 6.0  # Red alert threshold
 ### Customize ML Model
 See `ML_RISK_MODEL_README.md` for detailed model customization.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Areas for improvement:
 - Integration with real LIDAR data
@@ -410,17 +410,17 @@ Contributions welcome! Areas for improvement:
 - Mobile app development
 - Advanced forecasting models
 
-## 📄 License
+## License
 
 MIT License - feel free to use this project for educational or commercial purposes.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - California power grid data (synthetic)
 - Leaflet.js for mapping
 - scikit-learn for ML capabilities
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Port 5000 Already in Use
 ```bash
@@ -435,7 +435,7 @@ lsof -ti :5000 | xargs kill -9
 ```
 
 ### ML Models Not Loading
-**Error**: `❌ Error loading models: No such file or directory`
+**Error**: `Error loading models: No such file or directory`
 
 **Solution**:
 ```bash
@@ -448,7 +448,7 @@ ls models/
 ```
 
 ### Synthetic Data Missing
-**Error**: `❌ Could not load synthetic data`
+**Error**: `Could not load synthetic data`
 
 **Solution**:
 ```bash
@@ -502,5 +502,5 @@ For questions, issues, or collaboration opportunities, please open an issue on G
 
 **Built to prevent the next wildfire disaster. Every meter of clearance counts. Every week of warning matters.**
 
-🔥 **FireGuard AI** - *Predicting fires before they start*
+**FireGuard AI** - *Predicting fires before they start*
 
